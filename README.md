@@ -112,3 +112,12 @@ Heroen består nu kun af:
 
 Casekort er stadig klar til billeder i:
 assets/images/
+
+
+## v23 – Mobiloptimering og casebilleder
+
+- Topbaren er gjort smallere på mobil
+- Logo/brandtekst er gjort mindre på mobil
+- Casekort er gjort mere kompakte på mobil
+- Casebilleder bruger 16:10 på desktop og 4:3 på mobil
+- Layoutet er klar til brede casebilleder, ikke reel-format

@@ -1826,3 +1826,134 @@ body{
     min-height: 320px !important;
   }
 }
+
+
+/* ===== KM MEDIA V23 - MOBILE POLISH + CASE IMAGE FORMAT ===== */
+
+/* Casebilleder skal føles som premium case-thumbnails, ikke reels */
+.case-image-card,
+.case-media.case-image-card {
+  aspect-ratio: 16 / 10;
+  min-height: 0 !important;
+}
+
+.case-image-card img {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  object-fit: cover !important;
+}
+
+/* Hvis billedet ikke er uploadet endnu, holder boksen stadig pænt format */
+.case-image-fallback {
+  pointer-events: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav {
+    width: calc(100% - 24px) !important;
+    left: 12px !important;
+    right: 12px !important;
+    top: 12px !important;
+    min-height: 56px !important;
+    padding: 14px 14px 14px 18px !important;
+    border-radius: 22px !important;
+  }
+
+  .brand {
+    font-size: 14px !important;
+    gap: 8px !important;
+    letter-spacing: -.01em !important;
+    max-width: 220px !important;
+    white-space: nowrap !important;
+  }
+
+  .brand-mark {
+    width: 9px !important;
+    height: 9px !important;
+    flex: 0 0 9px !important;
+  }
+
+  .nav-toggle {
+    padding: 4px !important;
+  }
+
+  .nav-toggle span {
+    width: 20px !important;
+  }
+
+  .nav-links {
+    top: 58px !important;
+  }
+
+  .section {
+    width: min(calc(100% - 32px), var(--max)) !important;
+  }
+
+  .case-row,
+  .case-row.reverse {
+    padding: 12px !important;
+    gap: 22px !important;
+    border-radius: 26px !important;
+  }
+
+  .case-copy {
+    padding: 10px 8px 14px !important;
+  }
+
+  .case-copy h3 {
+    font-size: clamp(34px, 10vw, 46px) !important;
+  }
+
+  .case-copy p {
+    font-size: 16px !important;
+  }
+
+  .case-image-card,
+  .case-media.case-image-card {
+    width: 100% !important;
+    aspect-ratio: 4 / 3 !important;
+    min-height: 0 !important;
+    border-radius: 22px !important;
+  }
+
+  .case-image-card img {
+    height: 100% !important;
+    min-height: 0 !important;
+    object-fit: cover !important;
+  }
+
+  .case-image-fallback {
+    left: 18px !important;
+    right: 18px !important;
+    bottom: 18px !important;
+  }
+
+  .case-image-fallback span {
+    font-size: 13px !important;
+    padding: 7px 10px !important;
+  }
+
+  .case-image-fallback p {
+    font-size: 14px !important;
+    max-width: 260px !important;
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand {
+    font-size: 13px !important;
+    max-width: 190px !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(42px, 12.5vw, 56px) !important;
+  }
+
+  .case-image-card,
+  .case-media.case-image-card {
+    aspect-ratio: 4 / 3 !important;
+  }
+}
