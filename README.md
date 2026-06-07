@@ -144,3 +144,11 @@ Den tilføjer kun:
 - topbar indenfor viewport på mobil
 - mobilbredde-fix
 - casekort bevares
+
+
+## v30 – Trust edge fix only
+
+- Tillid-sektionen går igen helt ud til kanten
+- Indholdet forbliver centreret
+- Ingen farver er ændret
+- Side-scroll lock og topbar-fix fra v29 bevares

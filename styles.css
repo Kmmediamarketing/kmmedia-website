@@ -2186,3 +2186,59 @@ section,
     max-width: calc(100vw - 28px) !important;
   }
 }
+
+
+/* ===== KM MEDIA V30 - TRUST SECTION EDGE FIX ONLY ===== */
+/* Fjerner kanten rundt om Tillid-sektionen uden at ændre farver. */
+
+/* Tillid-sektionen går igen helt ud i bredden */
+.testimonials.section {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: max(20px, calc((100vw - var(--max)) / 2)) !important;
+  padding-right: max(20px, calc((100vw - var(--max)) / 2)) !important;
+  box-sizing: border-box !important;
+}
+
+/* Indholdet holder sig stadig pænt centreret */
+.testimonials .section-heading,
+.testimonials .testimonial-grid {
+  width: min(100%, var(--max)) !important;
+  max-width: var(--max) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Mobil: ingen hvid kant, men stadig luft til indholdet */
+@media (max-width: 768px) {
+  .testimonials.section {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  .testimonials .section-heading,
+  .testimonials .testimonial-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .testimonial {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .testimonials.section {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+}
