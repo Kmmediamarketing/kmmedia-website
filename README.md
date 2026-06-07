@@ -121,3 +121,11 @@ assets/images/
 - Casekort er gjort mere kompakte på mobil
 - Casebilleder bruger 16:10 på desktop og 4:3 på mobil
 - Layoutet er klar til brede casebilleder, ikke reel-format
+
+
+## v24 – Mobile lock + nav fix
+
+- Stopper sideværts scroll og hvid baggrund på mobil
+- Gør topbaren smallere og låser den indenfor viewport
+- Bevarer casekortene fra v23
+- Gør testimonials og sektioner mere stabile på mobil
