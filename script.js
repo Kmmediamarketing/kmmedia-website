@@ -110,46 +110,7 @@ window.addEventListener("scroll", updateAmbientBackground, { passive: true });
 updateAmbientBackground();
 
 
-/* ===== KM MEDIA V16 - STABLE HERO CARD CAROUSEL ===== */
-const kmHeroCards = Array.from(document.querySelectorAll(".hero-card"));
-const kmHeroDots = Array.from(document.querySelectorAll(".hero-card-controls span"));
-let kmHeroIndex = 0;
-
-function updateKmHeroCards() {
-  if (!kmHeroCards.length) return;
-
-  kmHeroCards.forEach((card, index) => {
-    card.classList.remove("active", "next", "prev");
-    const relative = (index - kmHeroIndex + kmHeroCards.length) % kmHeroCards.length;
-
-    if (relative === 0) card.classList.add("active");
-    if (relative === 1) card.classList.add("next");
-    if (relative === 2) card.classList.add("prev");
-  });
-
-  kmHeroDots.forEach((dot, index) => {
-    dot.classList.toggle("is-active", index === kmHeroIndex);
-  });
-}
-
-if (kmHeroCards.length) {
-  updateKmHeroCards();
-
-  setInterval(() => {
-    kmHeroIndex = (kmHeroIndex + 1) % kmHeroCards.length;
-    updateKmHeroCards();
-  }, 4300);
-
-  kmHeroCards.forEach((card, index) => {
-    card.addEventListener("click", () => {
-      kmHeroIndex = index;
-      updateKmHeroCards();
-    });
-  });
-}
-
-
-/* ===== KM MEDIA V17 FORMSPREE SUBMIT STATE ===== */
+/* ===== KM MEDIA V21 FORM STATE ===== */
 document.querySelector(".contact-form")?.addEventListener("submit", () => {
   const button = document.querySelector(".contact-form button[type='submit']");
   if (button) button.textContent = "Sender...";

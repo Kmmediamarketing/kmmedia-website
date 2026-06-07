@@ -86,25 +86,29 @@ Hvis du bruger Simply, skal filerne typisk ligge i public_html.
 - Mobilvisning justeret så billedet ikke forstyrrer teksten
 
 
-## v16 – Stable card-carousel hero
+## v21 – Behold alt, fjern videoer, gør cases klar til billeder
 
-- Én video i fokus ad gangen
-- To videoer ligger bagved som kort
-- Stabil afrunding via wrapper + clip-path
-- “set, husket og valgt” er highlightet i hero-overskriften
-- Automatisk skift hvert ca. 4,3 sekund
-- Klik på et kort for at gøre det aktivt
+Denne version:
+- Fjerner hero-videoerne og video-card carousel
+- Beholder premium hero og gradient-highlight på “set, husket og valgt”
+- Beholder kontaktformular/Formspree
+- Beholder struktur, cases, services, testimonials og FAQ
+- Casekortene er nu klar til billeder
 
-Videoer skal ligge her:
-assets/videos/hero-zandershop.mp4
-assets/videos/hero-meny-soborg.mp4
-assets/videos/hero-meny-himmelev.mp4
+Billeder skal ligge her:
+assets/images/case-meny-himmelev.jpg
+assets/images/case-zandershop.jpg
+assets/images/case-djalmas.jpg
 
 
-## v17 – Formspree kontaktformular
+## v22 – Clean hero fix
 
-Kontaktformularen er nu koblet til Formspree:
-https://formspree.io/f/mrevpbje
+Denne version fjerner alle rester fra tidligere video/card-hero.
+Heroen består nu kun af:
+- headline
+- gradient-highlight
+- tekst
+- CTA-knapper
 
-DNS skal ikke ændres for at Formspree virker.
-Test formularen efter upload.
+Casekort er stadig klar til billeder i:
+assets/images/
