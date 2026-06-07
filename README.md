@@ -123,9 +123,24 @@ assets/images/
 - Layoutet er klar til brede casebilleder, ikke reel-format
 
 
-## v24 – Mobile lock + nav fix
+## v28 – Tilbage til før lock-ændringer
 
-- Stopper sideværts scroll og hvid baggrund på mobil
-- Gør topbaren smallere og låser den indenfor viewport
-- Bevarer casekortene fra v23
-- Gør testimonials og sektioner mere stabile på mobil
+Denne version er baseret på den mørke version før v24/v25/v26/v27.
+Den fjerner de senere ændringer, der ødelagde Tillid-sektionen og farverne.
+
+Beholder:
+- mørk premium stil
+- no-video hero
+- casekort klar til billeder
+- mobiloptimerede casekort fra v23
+- Formspree
+
+
+## v29 – Lock + mobile fixes only
+
+Denne version bygger på v28/v23 og ændrer ikke farver.
+Den tilføjer kun:
+- side-scroll lock
+- topbar indenfor viewport på mobil
+- mobilbredde-fix
+- casekort bevares
